@@ -1,0 +1,57 @@
+pcall(function()
+_G.Team = "Pirate" -- Marine
+_G.AutoSetSpawn = true
+_G.FastAttack = true
+_G.SelectToolWeapon = "Combat"
+AutoEquip = true
+_G.Kaitanstat =  true
+_G.AutoSuperhuman = true
+_G.AutoDeathStep = true
+_G.AutoDargonTalon = true
+_G.AutoElectricclow = true
+_G.AutoSharkmanKarate = true
+ps = true
+
+SelectFruitSinper = "" -- ชื่อ Fruits : Name Fruits
+_G.BuyFruitSinPer = true
+_G.BRINGSFRUITS = true
+_G.Autorandomfruits = true
+
+    if game.PlaceId == 2753915549 then -- sea1
+        _G.AutoFarm = true 
+        _G.AutoNew_Ws = true -- Auto New World
+        _G.AutoSaber = true
+    elseif game.PlaceId == 4442272183 then -- sea2
+        _G.AutoFarm = true 
+        _G.AutoLegendarySword = true
+        _G.AutoThirdSea = true
+        _G.AutoQuestBartilo = true
+
+    elseif game.PlaceId == 7449423635 then -- sea3
+       
+        _G.AutoFarm = true 
+        _G.AutoBuddySword = true
+        _G.AutoCakePrince = true
+        _G.AutoEliteHunter = true
+        _G.SelectLockElite = 100
+        _G.LockElite = true
+        if game:GetService("Players").LocalPlayer.Data.Level.Value == 2100 then
+        _G.AutoFarmMasteryFruit = true
+        _G.KillAt = 20
+        if game:GetService("Players").LocalPlayer.Data.Level.Value == 2300 then
+         _G.SelectChip = "fruits"-- "Flame","Ice","Quake","Light","Dark","String","Rumble","Magma","Human: Buddha","Sand","Bird-Bird: Phoenix"
+         _G.AutoBuyChip = true
+         _G.AutoStartRaid = true
+         _G.AutoRaids = true
+         ps = true
+        end
+      end
+   end
+
+while wait(30) do
+game.Players.LocalPlayer.Character.Humanoid.Health = die
+end
+
+_G.ScriptMode = "Full"
+loadstring(game:HttpGet("Gtihubscript"))()
+end)
